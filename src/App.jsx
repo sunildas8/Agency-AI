@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './component/Navbar'
 import Hero from './component/Hero'
+import Trustedby from './component/Trustedby'
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <div className='dark:bg-black relative'>
        <Navbar theme={theme} setTheme={setTheme}/>
        <Hero />
+       <Trustedby />
     </div>
   )
 }
