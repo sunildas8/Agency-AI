@@ -17,7 +17,27 @@ const Footer = ({theme}) => {
                     <li><a className='hover:text-primary' href="#contact-us">Contact Us</a></li>
                 </ul>
             </div>
-            <div></div>
+            <div className='text-gray-600 dark:text-gray-400'>
+              <h3 className='font-semibold'>Subscribe to our newsletter</h3>
+              <p className='text-sm mt-2 mb-6'>The latest news, articles, and resources, sent to your inbox weekly.</p>
+
+              <div className='flex gap-2 text-sm'>
+                <input type="text" placeholder='Enter you email' className='w-full text-sm p-3 outline-none rounded-lg dark:text-gray-200 bg-transparent border border-gray-300 dark:border-gray-500'/>
+                <button className='bg-primary text-white rounded-lg px-6'>Susbcribe</button>
+              </div>
+            </div>
+        </div>
+        <hr className='border-gray-300 dark:border-gray-600 my-6'/>
+        
+        {/* copyright */}
+        <div className='flex justify-center sm:justify-between pb-6 text-sm text-gray-500 flex-wrap gap-4'>
+          <p>Copyright 2025 © agency.ai  -  All Right Reserved.</p>
+          <div className='flex items-center justify-between gap-4'>
+            <img src={assets.facebook_icon} alt="facebook_icon" />
+            <img src={assets.twitter_icon} alt="twitter_icon" />
+            <img src={assets.instagram_icon} alt="instagram_icon" />
+            <img src={assets.linkedin_icon} alt="linkedin_icon" />
+          </div>
         </div>
     </div>
   )
